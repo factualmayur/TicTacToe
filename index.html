@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img class="bg" src="bg.jpg" alt="">
+    <div class="black-overlay"></div>
+    <div class="container">
+        <div class="left">
+        
+                <div class="box b-l b-t"><span class="boxtext"></span></div>
+                <div class="box b-t"><span class="boxtext"></span></div>
+                <div class="box b-t b-r"><span class="boxtext"></span></div>
+                <div class="box b-l"><span class="boxtext"></span></div>
+                <div class="box"><span class="boxtext"></span></div>
+                <div class="box b-r"><span class="boxtext"></span></div>
+                <div class="box b-l b-b"><span class="boxtext"></span></div>
+                <div class="box b-b"><span class="boxtext"></span></div>
+                <div class="box b-b b-r"><span class="boxtext"></span></div>
+            
+
+        </div>
+
+        <div class="right">
+            <div class="name">Tic Tac Toe</div>
+            <div class="turnforX">Turn for X</div>
+            <div class="chin"><img  src="chin.jpg" alt=""></div>
+            <div class="reset">Reset</div>
+            
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCpjMcJIrTxZ_SnxIEWwOVEN3SpGO4fLOs",
+          authDomain: "tic-tac-toe-40389.firebaseapp.com",
+          projectId: "tic-tac-toe-40389",
+          storageBucket: "tic-tac-toe-40389.appspot.com",
+          messagingSenderId: "736219343828",
+          appId: "1:736219343828:web:6e477425f1494b3669c441",
+          measurementId: "G-XL030Q8F85"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+
+</html>
